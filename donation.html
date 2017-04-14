@@ -3,25 +3,26 @@
 <head>
 	<title>Jar of hope</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="shortcut icon" href="logo.png">
 </head>
 <body>
  	<div id="header">
  		<div class="logo">
  		</div>
  		<div class="navbar">
-	 		<div class="menu">Home</div>
+	 		<a href="index.html"><div class="menu">Home</div></a>
 			<div class="menu">Projects</div>
-			<div class="menu">Donation</div>
+			<a href="donation.html"><div class="menu">Donation</div></a>
 			<div class="menu dropdown">
 				More
 				<div class="dropdown-content">
-					<a href="#">About Us</a>
+					<a href="aboutUs.html">About Us</a>
 					<a href="#">Vision and Mission</a>
 				</div>
 			</div>
 
 		</div>
- 	</div>
+	 </div>
  	<div id="container">
 	 	<div class="titlecontainer">
 	 		<h1>THERE IS NO CURE FOR<br> DUCHENNE MUSCULAR DYSTROPHY<br> ... YET</h1>
@@ -51,22 +52,23 @@ Regardless of the amount, every donation makes a big difference to children livi
 	 	</div>
 
 	 	<div class="donation">
+	 	<center>
 	 	<form action="" method="" name="donate">
 		<script src="validasi.js"></script>
 			<h3>Help find a cure for Duchenne Muscular Dystrophy by donating here</h3>
 			<table cellpadding="5">
 				<tr>
 					<td class="form">Full name :<br>
-					<input type="text" id="txtFullname" size=22></td>
+					<input type="text" id="txtFullname"></td>
 				</tr>
 				<tr>
 					<td class="form">Email :<br>
-					<input type="email" id="txtEmail" size=22></td>
+					<input type="email" id="txtEmail"></td>
 				</tr>
 				<tr>
 					<td class="form">Gender :<br>
-					<label><input type="radio" id="Male" name="Gender" value="Male" class="form">Male</label>
-					<label><input type="radio" id="Female" name="Gender" value="Female" class="form">Female</label></td>
+					<div class = "radio"><label><input type="radio" id="Male" name="Gender" value="Male" class="form">Male</label></div>
+					<div class = "radio"><label><input type="radio" id="Female" name="Gender" value="Female" class="form">Female</label></div></td>
 				</tr>
 				<tr>
 					<td class="form">Country :<br>
@@ -329,16 +331,18 @@ Regardless of the amount, every donation makes a big difference to children livi
 				</tr>
 				<tr>
 					<td class="form">Donation Amount :<br>
-					<input type="number" id="txtAmount"></td>
+					<input type="number" id="txtAmount" placeholder="Rp. 2.000.000"></td>
 				</tr>
  				<tr>
-					<td><input type="checkbox" name="agree" value="check"/>I accept the terms & conditions</td>
+					<td><div class = "radio"><label><input type="checkbox" name="agree" value="check"/>I accept the terms & conditions</label></div></td>
 				</tr>
 				<tr>
 					<td><input type="submit" value="Submit" onclick="validasiRegister()"></td>
 				</tr>
 			</table>
+			
 		</form>
+		</center>
 		</div>
  	</div>
 
