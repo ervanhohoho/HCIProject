@@ -1,6 +1,6 @@
 @font-face
 {
-	font-family:Raleway-reg;
+	font-family:"Raleway-reg";
 	src: url(Raleway-Regular.ttf);
 }
 body
@@ -8,8 +8,16 @@ body
 	margin: 0;
 }
 
+h1 { 
+    display: block;
+    font-family:"Raleway-reg";
+	font-weight: bold;
+	color: white;
+}
+
 #header
 {
+	position: fixed;
 	min-width: 100%;
 	background-color: #414B4F;
 	height: 100px;
@@ -87,7 +95,7 @@ body
 }
 #container
 {
-
+width: 100%;
 }
 #container .imagecontainer
 {
@@ -102,90 +110,57 @@ body
 	width: 100%;
 	max-width: none;
 }
-#container .content-text
+
+#container .titlecontainer 
 {
-	padding-top: 2%;
-	padding-bottom: 2%;
-	font-family: Raleway-reg;
-	font-weight: bold;
-	font-size: 2em;
-	text-align: center;
-	color: grey;
-}
-#container .project-wrapper
-{
-	text-align: center;
-	margin-bottom: 2%;
-	background-color: lightgrey;
-}
-#container .project1
-{
-	margin: 0 3%;
-	background-image: url("image1.gif");
-	background-position: center;
-	height: 400px;
-	width: 450px;
-	display: inline-block;
-}
-#container .project2
-{
-	margin: 0 3%;
-	background-image: url("image2.jpg");
-	background-position: center;
-	height: 400px;
-	width: 450px;
-	display: inline-block;
-}
-#container .project3
-{
-	margin: 0 3%;
-	background-image: url("image3.jpg");
-	background-position: center;
-	height: 400px;
-	width: 450px;
-	display: inline-block;
-}
-.project1:hover , .project2:hover , .project3:hover
-{
-	transform: scale(1.1);
-	transition: 1s;
-}
-#container .about
-{
-	background-color: lightblue;
-	font-family: "Raleway-reg";
-	height: 150px;
-	padding-top: 5%;
+	padding-top: 150px;
 	padding-left: 20%;
-	font-size: 3em;
+	background-color: #a9d15e;
+	width: 100%;
+	height: 250px;
 }
-#container .mission-wrapper
+
+#container .donation
 {
-	padding-top: 3%;
-	padding-bottom: 3%;
-	text-align: center;
-	background-color: lightgray;
+	background-color: #f2f2f2;
+	font-family:"Raleway-reg";
+	display: inline-block;
+	float: right;
+	width: 15%;
+	margin-top: 20px;
+	margin-right: 20%;
+}
+
+#container .report
+{
+	margin-top: 20px;
+	font-family:"Raleway-reg";
+	display: inline-block;
+	float: left;
+	width: 43%;
+	margin-left: 20%;
 
 }
-#container .mission-title
+
+#container .add1
 {
-	font-family: "Raleway-reg";
-	font-weight: bold;
-	font-size: 4em;
-	margin-bottom: 1%;
+	float: left;
 }
-#container .mission-text
+
+#container .add2
 {
-	font-family: "Raleway-reg";
-	font-size: 1em;
+	float: right;
 }
+
+
 #footer
 {
 	height: 100px;
 	width: 100%;
 	background-color: #414B4F;
 	text-align: center;
-	font-style: "Raleway-reg";
+	font-style: Raleway-reg;
 	color: #acacac;
 	font-size: 12px;
+	clear: both;	
 }
