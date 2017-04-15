@@ -48,6 +48,8 @@ h1 {
 	color: #acacac;
 	padding:50px;
 	width: 130px;
+	padding:50px 30px;
+	vertical-align: middle;
 	display: inline-block;
 	font-family: "Raleway-reg";
 	font-size: 18px;
