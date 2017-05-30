@@ -47,12 +47,13 @@ h1 {
 	margin-top: -1%;
 	color: #acacac;
 	padding:50px;
-	width: 130px;
+	width: 150px;
 	padding:50px 30px;
+	padding-left: 0px;
 	vertical-align: middle;
 	display: inline-block;
 	font-family: "Raleway-reg";
-	font-size: 18px;
+	font-size: 1em;
 	text-transform: uppercase;
 	font-weight: bolder;
 	text-align: left;
@@ -176,15 +177,12 @@ width: 100%;
 	width: 43%;
 	margin-left: 20%;
 }
-#container .add1
+#container .add
 {
-	float: left;
+	width: 49%;
+	display: inline-block;
 }
 
-#container .add2
-{
-	float: right;
-}
 #container .content-text
 {
 	padding-top: 2%;
@@ -260,7 +258,7 @@ width: 100%;
 }
 #container .mission-text
 {
-	font-size: 1em;
+	font-size: 2em;
 }
 #container .dmd-wrapper
 {
@@ -312,6 +310,7 @@ width: 100%;
 }
 #container .project-wrapper .title-img-wrapper
 {
+	margin-top: 2%;
 	display: inline-block;
 	vertical-align: top;
 	width: 49%;
@@ -340,6 +339,20 @@ width: 100%;
 	width: 100%;
 	font-size: 2vh;
 }
+#slider
+{
+	width: 50%;
+	display: inline-block;
+	overflow: hidden;
+}
+#slides
+{
+	position: relative;
+}
+.slide
+{
+	float:left;
+}
 #footer
 {
 	height: 100px;
@@ -350,4 +363,74 @@ width: 100%;
 	color: #acacac;
 	font-size: 12px;
 	clear: both;	
+}
+#errMsg
+{
+	color: red;
+	text-align: center;
+}
+#donationReport
+{
+	background-color: white;
+}
+
+@media only screen and (max-width: 500px) {
+    #header
+    {
+    	height: 50px;
+    }
+    #header .menu
+	{
+		margin-top: -1%;
+		color: #acacac;
+		width: 25px;
+		padding:25px 25px;
+		vertical-align: middle;
+		display: inline-block;
+		font-family: "Raleway-reg";
+		font-size: 10px;
+		text-transform: uppercase;
+		font-weight: bolder;
+		text-align: left;
+	}
+	#header .logo
+	{
+		width: 50px;
+		height: 50px;
+		background-image: url("logo.png");
+		background-size: 50px;
+		background-position: center;
+		background-repeat: no-repeat;
+		display: inline-block;
+		float: left;
+	}
+	#header .navbar
+	{
+		height: 50px;
+		display: inline-block;
+		text-align: right;
+		float: right;
+		vertical-align: middle;
+	}
+	#header .dropdown-content 
+	{
+		display: none;
+		z-index: 1;
+		position: absolute;
+		right: 1.7%;
+		padding: 15px 0px;
+		margin-right: -8px;
+		background-color: #414B4F;
+	}
+	#header .dropdown-content a
+	{
+		color: #acacac;
+		font-family: "Raleway-reg";
+		font-size: 10px;
+		text-transform: uppercase;
+		font-weight: bolder;
+		display: block;
+		padding: 16px 10px;
+		text-decoration: none;
+	}	
 }
