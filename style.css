@@ -433,4 +433,26 @@ width: 100%;
 		padding: 16px 10px;
 		text-decoration: none;
 	}	
+	.jssorb05 {
+        position: absolute;
+    }
+    .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+        position: absolute;
+        /* size of bullet elment */
+        width: 16px;
+        height: 16px;
+        background: url('img/b05.png') no-repeat;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    .jssorb05 div { background-position: -7px -7px; }
+    .jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
+    .jssorb05 .av { background-position: -67px -7px; }
+    .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+
+    .jssora031 {display:block;position:absolute;cursor:pointer;}
+    .jssora031 .a {fill:#fff;}
+    .jssora031:hover {opacity:.8;}
+    .jssora031.jssora031dn {opacity:.5;}
+    .jssora031.jssora031ds { opacity: .3; pointer-events: none; }
 }

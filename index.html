@@ -5,8 +5,12 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="shortcut icon" href="logo.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="js/jssor.slider-24.1.5.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src = "js/slider.js"></script>
 </head>
 <body>
+	
  	<div id="header">
 	 		<div class="logo">
 	 		</div>
@@ -23,16 +27,41 @@
 				</div>
 			</div>
 	 </div>
+	 <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;visibility:hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" style="position:absolute;top:0px;left:0px;background:url('img/loading.gif') no-repeat 50% 50%;background-color:rgba(0, 0, 0, 0.7);"></div>
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;">
+            <div>
+                <img data-u="image" src="donate3.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="Dontate2.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="donation1.gif" />
+            </div>
+        </div>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
+            <!-- bullet navigator item prototype -->
+            <div data-u="prototype" style="width:16px;height:16px;"></div>
+        </div>
+        <!-- Arrow Navigator -->
+        <div data-u="arrowleft" class="jssora031" style="width:50px;height:50px;top:0px;left:20px;" data-autocenter="2">
+            <svg viewbox="-12986 -2977 16000 16000" style="width:100%;height:100%;">
+                <polygon class="a" points="-1182.1,12825.5 -792,12435.4 -8204.5,5023 -792,-2389.4 -1182.1,-2779.5 -8984.8,5023"></polygon>
+            </svg>
+        </div>
+        <div data-u="arrowright" class="jssora031" style="width:50px;height:50px;top:0px;right:20px;" data-autocenter="2">
+            <svg viewbox="-12986 -2977 16000 16000" style="width:100%;height:100%;">
+                <polygon class="a" points="-8594.7,12825.5 -8984.8,12435.4 -1572.3,5023 -8984.8,-2389.4 -8594.7,-2779.5 -792,5023"></polygon>
+            </svg>
+        </div>
+    </div>
  	<div id="container">
-	 	<div class="imagecontainer">
-	 		<img class="imgSlide" src="Dontate2.jpg">
-	 		<img class="imgSlide" src="donation1.gif">
-	 		<img class="imgSlide" src="donate3.jpg">
-	 	</div>
 	 	<div class="content-text">
 	 		JAR of Hope's mission is dedicated to bringing awareness and raising funds directed to ongoing research in the hope of eliminating Duchenne Muscular Dystrophy.
 	 	</div>
-	 	<script src="slider.js"></script>
 	 	<div class="index-project-wrapper">
 			<div class="project1"></div>
 			<div class="project2"></div>
